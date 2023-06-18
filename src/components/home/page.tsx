@@ -23,18 +23,18 @@ function HomePage() {
           delay: 400
      })
      return (
-          <div className='md:flex max-sm:flex-col flex md:space-y-0 space-y-10 items-center h-full justify-center md:space-x-10 -z-50 dark:text-[#B5B5B5]'>
+          <div className=' md:flex max-sm:flex-col flex md:space-y-0 space-y-10 items-center h-full justify-center md:space-x-10 -z-50 dark:text-[#B5B5B5]'>
                <div className={`${inter.className} md:space-y-2 p-8 space-y-2`}>
                     <animated.h1 className='text-[2.7rem] font-bold whitespace-normal' style={textStyles}>
                          Hi 👋,
                     </animated.h1>
                     <animated.h1 style={textStyles} className='md:text-[1.8rem] text-[1.6rem] font-bold whitespace-normal'>
-                         I'm Naing Linn Phyo  {'</>'}
+                         I'm Naing Linn Phyo  {"</>"}
                     </animated.h1>
                     <animated.h1 style={textStyles} className='text-base'>I'm a developer based in Yangon.</animated.h1>
                </div>
-               <animated.div style={imageStyle} className='p-8 md:w-96 md:h-96 w-96 h-96 justify-center items-center flex inset-0 object-cover'>
-                    <Image src='/image/profilePic.png' alt={''} width={1200} height={1200} className='' />
+               <animated.div style={imageStyle} className='md:w-96 md:h-96 w-72 h-72 justify-center items-center flex inset-0 object-cover'>
+                    <Image src='/image/profilePic.png' alt={''} width={1000} height={1000} className='' />
                </animated.div>
           </div >
      )
