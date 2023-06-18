@@ -1,7 +1,9 @@
+import Navbar from '@/components/Header'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Roboto_Slab } from 'next/font/google'
+import { InitialPageLoad } from '@/components/InitialPageLoad'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Roboto_Slab({ subsets: ['latin'], weight: '400' })
 
 export const metadata = {
   title: 'Create Next App',
@@ -15,7 +17,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} w-full`}>
+        <InitialPageLoad>
+          <Navbar />
+          {children}
+        </InitialPageLoad>
+      </body>
     </html>
   )
 }
