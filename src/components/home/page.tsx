@@ -29,7 +29,7 @@ function HomePage() {
                          Hi 👋,
                     </animated.h1>
                     <animated.h1 style={textStyles} className='md:text-[1.8rem] text-[1.6rem] font-bold whitespace-normal'>
-                         I'm Naing Linn Phyo  {"</>"}
+                         I'm Naing Linn Phyo  {'</>'}
                     </animated.h1>
                     <animated.h1 style={textStyles} className='text-base'>I'm a developer based in Yangon.</animated.h1>
                </div>

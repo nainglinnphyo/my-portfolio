@@ -4,7 +4,7 @@ import HomePage from '@/components/home/page'
 import Image from 'next/image'
 import React from 'react'
 
-export default function Home({ children }: { children: React.ReactNode }) {
+function Home() {
   return (
     <div className=''>
       <section id='' className='h-screen  pt-8 '>
@@ -22,3 +22,5 @@ export default function Home({ children }: { children: React.ReactNode }) {
     </div >
   )
 }
+
+export default Home;
