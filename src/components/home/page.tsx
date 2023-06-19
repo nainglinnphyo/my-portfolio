@@ -35,7 +35,7 @@ function HomePage() {
           delay: 100
      })
      return (
-          <div className='md:flex max-sm:flex-col flex md:space-y-0 space-y-28 items-center h-full justify-center md:space-x-10 -z-50 dark:text-[#B5B5B5]'>
+          <div className='md:flex max-sm:flex-col flex md:space-y-0 space-y-10 items-center h-full justify-center md:space-x-10 -z-50 dark:text-[#B5B5B5]'>
                <div className={`${inter.className} pb-20 p-4 space-y-2`}>
                     <animated.h1 className='text-[2.7rem] font-bold whitespace-normal flex' style={textStyles}>
                          <div className='text-green-600 dark:text-green-500'>Hi</div> &nbsp; 👋,
