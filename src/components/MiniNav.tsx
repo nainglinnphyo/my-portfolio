@@ -14,6 +14,24 @@ function MiniNav({ setOpenMini, activeSectionId, setActiveSectionId }: any) {
      const text = useSpring({
           from: { opacity: 0, marginRight: "-100vh" },
           to: { opacity: 1, marginRight: "0" },
+          delay: 200
+     })
+
+     const text1 = useSpring({
+          from: { opacity: 0, marginRight: "-100vh" },
+          to: { opacity: 1, marginRight: "0" },
+          delay: 300
+     })
+
+     const text2 = useSpring({
+          from: { opacity: 0, marginRight: "-100vh" },
+          to: { opacity: 1, marginRight: "0" },
+          delay: 400
+     })
+
+     const text3 = useSpring({
+          from: { opacity: 0, marginRight: "-100vh" },
+          to: { opacity: 1, marginRight: "0" },
           delay: 500
      })
 
@@ -36,19 +54,19 @@ function MiniNav({ setOpenMini, activeSectionId, setActiveSectionId }: any) {
                          }}>
                               <CustomLink href='' title='Home' activeSectionId={activeSectionId} />
                          </animated.li>
-                         <animated.li style={text} onClick={() => {
+                         <animated.li style={text1} onClick={() => {
                               setOpenMini(false)
                               setActiveSectionId('#about')
                          }}>
                               <CustomLink href='#about' title='About' activeSectionId={activeSectionId} />
                          </animated.li>
-                         <animated.li style={text} onClick={() => {
+                         <animated.li style={text2} onClick={() => {
                               setOpenMini(false)
                               setActiveSectionId('#tech-stack')
                          }}>
                               <CustomLink href='#tech-stack' title='Tech Stack' activeSectionId={activeSectionId} />
                          </animated.li>
-                         <animated.li style={text} onClick={() => {
+                         <animated.li style={text3} onClick={() => {
                               setOpenMini(false)
                               setActiveSectionId('#project')
                          }}>

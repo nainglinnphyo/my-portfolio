@@ -10,7 +10,7 @@ import { useTheme } from 'next-themes';
 
 export const CustomLink = ({ title, href, className, activeSectionId }: { title: string, href: string, className?: string, activeSectionId: string }) => {
      return (
-          <Link href={href} className={`relative group cursor-pointer text-[#000] dark:text-[#B5B5B5]`}>
+          <Link href={href} className={`relative group cursor-pointer text-[#000] dark:text-[#B5B5B5] font-bold`}>
                {title}
                <span className={` h-[0.12rem] bg-black dark:bg-[#B5B5B5] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${href === activeSectionId ? 'w-full' : 'w-0'}`}>
                </span>

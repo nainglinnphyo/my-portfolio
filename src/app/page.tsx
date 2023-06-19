@@ -7,10 +7,10 @@ import React from 'react'
 function Home() {
   return (
     <div className=''>
-      <section id='' className='h-screen  pt-8 '>
+      <section id='' className='h-screen  pt-8 mt-8'>
         <HomePage />
       </section>
-      <section id='about' className='h-screen  pt-8 ' >
+      <section id='about' className='h-screen  pt-4' >
         about
       </section>
       <section id='tech-stack' className='h-screen  pt-8 ' >
