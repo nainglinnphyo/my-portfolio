@@ -11,7 +11,7 @@ import { useTheme } from 'next-themes';
 export const CustomLink = ({ title, href, className, activeSectionId }: { title: string, href: string, className?: string, activeSectionId: string }) => {
      return (
           <Link href={href} className={`relative group cursor-pointer text-[#000] dark:text-[#B5B5B5] font-bold`}>
-               {title}
+               {title}<span className='font-bold'>.</span>
                <span className={` h-[0.12rem] bg-black dark:bg-[#B5B5B5] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${href === activeSectionId ? 'w-full' : 'w-0'}`}>
                </span>
           </Link>
@@ -80,17 +80,10 @@ function Navbar() {
                                         <li onClick={() => setActiveSectionId('#project')}>
                                              <CustomLink href='#project' title='Project' activeSectionId={activeSectionId} />
                                         </li>
+                                        <li className='cursor-pointer'>
+                                             <SwitchModeButton />
+                                        </li>
                                    </ul>
-                                   <div className='hidden md:block'>
-                                        <ul className='flex space-x-3'>
-                                             <li><Icon icon='mdi:github' width='1.5rem' height='1.5rem' color={`${currentTheme === 'light' ? '#000' : '#B5B5B5'}`} /></li>
-                                             <li><Icon icon='entypo-social:linkedin-with-circle' width='1.5rem' height='1.5rem' color={`${currentTheme === 'light' ? '#000' : '#B5B5B5'}`} /></li>
-                                             <li><Icon icon='simple-icons:telegram' width='1.5rem' height='1.5rem' color={`${currentTheme === 'light' ? '#000' : '#B5B5B5'}`} /></li>
-                                             <li>
-                                                  <SwitchModeButton />
-                                             </li>
-                                        </ul>
-                                   </div>
 
                               </div>
 
