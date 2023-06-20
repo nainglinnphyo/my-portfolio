@@ -10,10 +10,7 @@ export const InitialPageLoad = ({ children }: { children: React.ReactNode }) => 
           from: { opacity: 0 },
           to: { opacity: 1 },
      }));
-
      const [load, setLoad] = useState(false)
-
-
      useEffect(() => {
           setAnimation({ opacity: 1 });
           setLoad(true)
@@ -23,9 +20,7 @@ export const InitialPageLoad = ({ children }: { children: React.ReactNode }) => 
           <>
                {load && <ThemeProvider attribute="class">
                     <animated.div style={animation}>
-                         {/* <HashScroll> */}
                          {children}
-                         {/* </HashScroll> */}
                     </animated.div>
                </ThemeProvider>}
           </>
