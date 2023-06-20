@@ -69,7 +69,7 @@ function HomePage() {
                     </div>
                     <animated.div style={imageStyle} className='md:w-96 pb-20 md:h-96 w-72 h-72 justify-center items-center flex inset-0 object-cover'>
                          <animated.div className='transition duration-700 ease-in-out hover:scale-105 cursor-none'>
-                              <Image src='/image/profilePic.png' alt={''} width={1000} height={1000} className='' />
+                              <Image loading='lazy' src='/image/profilePic.png' alt={''} width={1000} height={1000} className='' />
                          </animated.div>
                     </animated.div>
                </div >
