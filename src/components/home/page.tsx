@@ -56,8 +56,8 @@ function HomePage() {
      })
 
      return (
-          <div className='items-center flex h-full  justify-center flex-col -z-50 py-20'>
-               <div className='md:flex max-sm:flex-col flex md:space-y-0 space-y-10 justify-center items-center md:space-x-10  dark:text-[#B5B5B5]'>
+          <div className='items-center flex h-full justify-center flex-col -z-50 py-20'>
+               <div className='md:flex max-sm:flex-col flex md:space-y-0 space-y-4 justify-center items-center md:space-x-10  dark:text-[#B5B5B5]'>
                     <div className={`${inter.className} pb-20 p-4 space-y-2`}>
                          <animated.h1 className='text-[2.7rem] font-bold whitespace-normal flex' style={textStyles}>
                               <div className='text-[#63c188]'>Hi</div> &nbsp; 👋,
@@ -73,7 +73,7 @@ function HomePage() {
                          </animated.div>
                     </animated.div>
                </div >
-               <div className='w-full flex justify-center pt-10 md:pt-20'>
+               <div className='w-full flex justify-center pt-2 md:pt-20'>
                     <ul className='flex space-x-2 md:space-x-6'>
                          <animated.li style={bT1} className='md:w-36 md:h-12 w-28 h-10 rounded-md border-[#5a5a5a] dark:border-[#9d9d9d] border-b-[0.003rem] shadow-sm border-dashed flex justify-center items-center'>
                               <Link href='' >
