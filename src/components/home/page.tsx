@@ -38,19 +38,19 @@ function HomePage() {
      })
 
      const bT1 = useSpring({
-          from: { transform: 'translate3d(0,40px,0)', opacity: 0 },
+          from: { transform: 'translate3d(0,80px,0)', opacity: 0 },
           to: { transform: 'translate3d(0,0,0)', opacity: 1 },
           delay: 500
      })
 
      const bT2 = useSpring({
-          from: { transform: 'translate3d(0,40px,0)', opacity: 0 },
+          from: { transform: 'translate3d(0,80px,0)', opacity: 0 },
           to: { transform: 'translate3d(0,0,0)', opacity: 1 },
           delay: 600
      })
 
      const bT3 = useSpring({
-          from: { transform: 'translate3d(0,40px,0)', opacity: 0 },
+          from: { transform: 'translate3d(0,80px,0)', opacity: 0 },
           to: { transform: 'translate3d(0,0,0)', opacity: 1 },
           delay: 700
      })
@@ -69,21 +69,21 @@ function HomePage() {
                     </div>
                     <animated.div style={imageStyle} className='md:w-96 pb-20 md:h-96 w-72 h-72 justify-center items-center flex inset-0 object-cover'>
                          <animated.div className='transition duration-700 ease-in-out hover:scale-105 cursor-none'>
-                              <Image loading='lazy' src='/image/profilePic.png' alt={''} width={1000} height={1000} className='' />
+                              <Image loading='lazy' src='/image/profilePic.webp' alt={''} width={1000} height={1000} className='' />
                          </animated.div>
                     </animated.div>
                </div >
                <div className='w-full flex justify-center pt-2 md:pt-20'>
                     <ul className='flex space-x-2 md:space-x-6'>
-                         <animated.li style={bT1} className='md:w-36 md:h-12 w-28 h-10 rounded-md border-[#5a5a5a] dark:border-[#9d9d9d] border-b-[0.003rem] shadow-sm border-dashed flex justify-center items-center'>
+                         <animated.li style={bT1} className='md:w-36 md:h-12 w-28 h-10 rounded-md border-[#5a5a5a] dark:border-[#9d9d9d] border-b-[0.008rem] shadow-sm hover:shadow-md duration-500 border-dashed flex justify-center items-center'>
                               <Link href='' >
-                                   <div className='flex items-center justify-center text-[#5a5a5a] dark:text-[#eaeaea] space-x-1'>
+                                   <div className='flex items-center justify-center text-[#5a5a5a] dark:text-[#eaeaea] space-x-1 '>
                                         <Icon icon='mdi:github' width='1.4rem' height='1.4rem' color={`${currentTheme === 'light' ? '#5a5a5a' : '#eaeaea'}`} />
                                         <span className='font-semibold'>Github</span>
                                    </div>
                               </Link>
                          </animated.li>
-                         <animated.li style={bT2} className='md:w-36 md:h-12 w-28 h-10 rounded-md border-[#5a5a5a] dark:border-[#747474] border-b-[0.003rem] shadow-sm border-dashed flex justify-center items-center'>
+                         <animated.li style={bT2} className='md:w-36 md:h-12 w-28 h-10 rounded-md border-[#5a5a5a] dark:border-[#747474] border-b-[0.008rem] shadow-sm hover:shadow-md duration-500  border-dashed flex justify-center items-center'>
                               <Link href='' >
                                    <div className='flex items-center justify-center text-[#5a5a5a] dark:text-[#eaeaea] space-x-1'>
                                         <Icon icon='entypo-social:linkedin-with-circle' width='1.4rem' height='1.4rem' color={`${currentTheme === 'light' ? '#5a5a5a' : '#eaeaea'}`} />
@@ -91,7 +91,7 @@ function HomePage() {
                                    </div>
                               </Link>
                          </animated.li>
-                         <animated.li style={bT3} className='md:w-36 md:h-12 w-28 h-10 rounded-md border-[#5a5a5a] dark:border-[#747474] border-b-[0.003rem] shadow-sm border-dashed flex justify-center items-center'>
+                         <animated.li style={bT3} className='md:w-36 md:h-12 w-28 h-10 rounded-md border-[#5a5a5a] dark:border-[#747474] border-b-[0.008rem] shadow-sm hover:shadow-md duration-500 border-dashed flex justify-center items-center'>
                               <Link href='' >
                                    <div className='flex items-center justify-center text-[#5a5a5a] dark:text-[#eaeaea] space-x-1'>
                                         <Icon icon='simple-icons:telegram' width='1.4rem' height='1.4rem' color={`${currentTheme === 'light' ? '#5a5a5a' : '#eaeaea'}`} />

@@ -3,6 +3,7 @@ import './globals.css'
 import { Roboto_Slab } from 'next/font/google'
 import { InitialPageLoad } from '@/components/InitialPageLoad'
 import Head from 'next/head'
+import favicon from './favicon.ico';
 
 const inter = Roboto_Slab({ subsets: ['latin'], weight: '400' })
 
@@ -19,6 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="shortcut icon" href={favicon.src} type="image/x-icon" />
+      </head>
       <body className={`${inter.className} w-full`}>
         <InitialPageLoad>
           <Navbar />
