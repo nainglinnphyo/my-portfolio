@@ -55,19 +55,25 @@ function HomePage() {
           delay: 700
      })
 
+     const arrow = useSpring({
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+          delay: 1000
+     })
+
      return (
-          <div className='items-center flex h-full justify-center flex-col -z-50 py-20'>
-               <div className='md:flex max-sm:flex-col flex md:space-y-0 space-y-4 justify-center items-center md:space-x-10  dark:text-[#B5B5B5]'>
+          <div className='items-center flex h-full justify-center flex-col -z-50 py-20 md:space-y-2'>
+               <div className='md:flex max-sm:flex-col flex justify-center items-center md:space-x-10  dark:text-[#B5B5B5]'>
                     <div className={`${inter.className} pb-20 p-4 space-y-2`}>
-                         <animated.h1 className='text-[2.7rem] font-bold whitespace-normal flex' style={textStyles}>
+                         <animated.h1 className='text-[2rem] md:text-[2.7rem]  font-bold whitespace-normal flex' style={textStyles}>
                               <div className='text-[#63c188]'>Hi</div> &nbsp; 👋,
                          </animated.h1>
-                         <animated.h1 style={textStyles1} className='md:text-[1.8rem] text-[1.6rem] font-bold whitespace-normal'>
+                         <animated.h1 style={textStyles1} className='md:text-[1.8rem] text-[1.3rem] font-bold whitespace-normal'>
                               I'm Naing <span className='text-[#63c188]'>Linn</span> Phyo  {"</>"}
                          </animated.h1>
-                         <animated.h1 style={textStyles2} className='text-base'>I'm a <span className='text-[#63c188] font-bold '>developer</span> based in Yangon.</animated.h1>
+                         <animated.h1 style={textStyles2} className='text-base text-[0.85rem]'>I'm a <span className='text-[#63c188] font-bold '>developer</span> based in Yangon.</animated.h1>
                     </div>
-                    <animated.div style={imageStyle} className='md:w-96 pb-20 md:h-96 w-72 h-72 justify-center items-center flex inset-0 object-cover'>
+                    <animated.div style={imageStyle} className='md:w-96 pb-20 md:h-96 w-64 h-64 justify-center items-center flex inset-0 object-cover'>
                          <animated.div className='transition duration-700 ease-in-out hover:scale-105 cursor-none'>
                               <Image loading='lazy' src='/image/profilePic.webp' alt={''} width={1000} height={1000} className='' />
                          </animated.div>
@@ -101,6 +107,12 @@ function HomePage() {
                          </animated.li>
                     </ul>
                </div>
+               <animated.div style={arrow} className='flex md:justify-end justify-center w-full px-10 mt-16 animate-bounce'>
+                    <div className='flex'>
+                         <Icon icon="tabler:arrow-big-down-line" width='1.2rem' height='1.2rem' color={`${currentTheme === 'light' ? '#5a5a5a' : '#eaeaea'}`} />
+                         <span className='text-[0.8rem]'>Scroll for more</span>
+                    </div>
+               </animated.div>
           </div>
      )
 }
