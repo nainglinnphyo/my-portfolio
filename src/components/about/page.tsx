@@ -3,7 +3,7 @@ import React from 'react'
 const poppinsFont = Poppins({ subsets: ['latin'], weight: '700' })
 function About() {
      return (
-          <div className='h-ful md:pt-28 justify-between flex flex-col md:px-52 px-10'>
+          <div className='h-ful md:pt-28 justify-between flex flex-col md:px-52 px-10 -z-50'>
                <div className='flex flex-col md:space-y-4 space-y-6 items-center md:items-start'>
                     <div>
                          {/* text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */}
