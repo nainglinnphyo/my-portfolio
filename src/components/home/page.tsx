@@ -62,8 +62,8 @@ function HomePage() {
      })
 
      return (
-          <div className='items-center flex h-full justify-center flex-col -z-50 py-20 md:space-y-2'>
-               <div className='md:flex max-sm:flex-col flex justify-center items-center md:space-x-10  dark:text-[#B5B5B5]'>
+          <div className='items-center flex h-full justify-evenly flex-col -z-50'>
+               <div className='md:flex max-sm:flex-col flex justify-center items-center md:space-x-10 md:pt-12 pt-2 dark:text-[#B5B5B5]'>
                     <div className={`${inter.className} pb-20 p-4 space-y-1`}>
                          <animated.h1 className='text-[2.2rem] md:text-[2.7rem]  font-bold whitespace-normal flex' style={textStyles}>
                               <div className='text-[#63c188]'>Hi</div> &nbsp; 👋,
@@ -73,44 +73,44 @@ function HomePage() {
                          </animated.h1>
                          <animated.h1 style={textStyles2} className='text-base '>I'm a <span className='text-[#63c188] font-bold '>developer</span> based in Yangon.</animated.h1>
                     </div>
-                    <animated.div style={imageStyle} className='md:w-96 pb-20 md:h-96 w-64 h-64 justify-center items-center flex inset-0 object-cover'>
-                         <animated.div className='transition duration-700 ease-in-out hover:scale-105 cursor-none'>
-                              <Image loading='lazy' src='/image/profilePic.webp' alt={''} width={1000} height={1000} className='' />
+                    <animated.div style={imageStyle} className='md:w-80 pb-20 md:h-80 w-64 h-64 rounded-full justify-center items-center flex inset-0 object-cover'>
+                         <animated.div className='transition duration-700 ease-in-out hover:scale-105 items-center'>
+                              <Image loading='lazy' src='/image/ProfileImage.png' alt={''} width={500} height={500} />
                          </animated.div>
                     </animated.div>
                </div >
-               <div className='w-full flex justify-center pt-2 md:pt-20'>
+               <div className='w-full flex justify-center'>
                     <ul className='flex space-x-2 md:space-x-6'>
-                         <animated.li style={bT1} className='md:w-36 md:h-12 w-28 h-10 rounded-md border-[#5a5a5a] dark:border-[#9d9d9d] border-b-[0.008rem] shadow-sm hover:shadow-md duration-500 border-dashed flex justify-center items-center'>
+                         <animated.li style={bT1} className='md:w-36 md:h-12 w-28 h-10 rounded-md border-[#5a5a5a] dark:border-[#9d9d9d] border-b-[0.008rem] shadow-sm hover:shadow-md hover:duration-500 border-dashed flex justify-center items-center'>
                               <Link href='' >
-                                   <div className='flex items-center justify-center text-[#5a5a5a] dark:text-[#eaeaea] space-x-1 '>
-                                        <Icon icon='mdi:github' width='1.4rem' height='1.4rem' color={`${currentTheme === 'light' ? '#5a5a5a' : '#eaeaea'}`} />
+                                   <div className='flex items-center justify-center text-[#5a5a5a] dark:text-[#B5B5B5] space-x-1 '>
+                                        <Icon icon='mdi:github' width='1.4rem' height='1.4rem' color={`${currentTheme === 'light' ? '#5a5a5a' : '#B5B5B5'}`} />
                                         <span className='font-semibold'>Github</span>
                                    </div>
                               </Link>
                          </animated.li>
-                         <animated.li style={bT2} className='md:w-36 md:h-12 w-28 h-10 rounded-md border-[#5a5a5a] dark:border-[#747474] border-b-[0.008rem] shadow-sm hover:shadow-md duration-500  border-dashed flex justify-center items-center'>
+                         <animated.li style={bT2} className='md:w-36 md:h-12 w-28 h-10 rounded-md border-[#5a5a5a] dark:border-[#747474] border-b-[0.008rem] shadow-sm hover:shadow-md hover:duration-500  border-dashed flex justify-center items-center'>
                               <Link href='' >
-                                   <div className='flex items-center justify-center text-[#5a5a5a] dark:text-[#eaeaea] space-x-1'>
-                                        <Icon icon='entypo-social:linkedin-with-circle' width='1.4rem' height='1.4rem' color={`${currentTheme === 'light' ? '#5a5a5a' : '#eaeaea'}`} />
+                                   <div className='flex items-center justify-center text-[#5a5a5a] dark:text-[#B5B5B5] space-x-1'>
+                                        <Icon icon='entypo-social:linkedin-with-circle' width='1.4rem' height='1.4rem' color={`${currentTheme === 'light' ? '#5a5a5a' : '#B5B5B5'}`} />
                                         <span className='font-semibold'>LinkedIn</span>
                                    </div>
                               </Link>
                          </animated.li>
-                         <animated.li style={bT3} className='md:w-36 md:h-12 w-28 h-10 rounded-md border-[#5a5a5a] dark:border-[#747474] border-b-[0.008rem] shadow-sm hover:shadow-md duration-500 border-dashed flex justify-center items-center'>
+                         <animated.li style={bT3} className='md:w-36 md:h-12 w-28 h-10 rounded-md border-[#5a5a5a] dark:border-[#747474] border-b-[0.008rem] shadow-sm hover:shadow-md hover:duration-500 border-dashed flex justify-center items-center'>
                               <Link href='' >
-                                   <div className='flex items-center justify-center text-[#5a5a5a] dark:text-[#eaeaea] space-x-1'>
-                                        <Icon icon='simple-icons:telegram' width='1.4rem' height='1.4rem' color={`${currentTheme === 'light' ? '#5a5a5a' : '#eaeaea'}`} />
+                                   <div className='flex items-center justify-center text-[#5a5a5a] dark:text-[#B5B5B5] space-x-1'>
+                                        <Icon icon='simple-icons:telegram' width='1.4rem' height='1.4rem' color={`${currentTheme === 'light' ? '#5a5a5a' : '#B5B5B5'}`} />
                                         <span className='font-semibold'>Twitter</span>
                                    </div>
                               </Link>
                          </animated.li>
                     </ul>
                </div>
-               <animated.div style={arrow} className='flex md:justify-end justify-center w-full px-10 mt-16 animate-bounce'>
+               <animated.div style={arrow} className='flex md:justify-end justify-center h-10 items-center w-full px-10 animate-bounce'>
                     <div className='flex'>
-                         <Icon icon="tabler:arrow-big-down-line" width='1.2rem' height='1.2rem' color={`${currentTheme === 'light' ? '#5a5a5a' : '#eaeaea'}`} />
-                         <span className='text-[0.8rem]'>Scroll for more</span>
+                         <Icon icon="tabler:arrow-big-down-line" width='1.2rem' height='1.2rem' color={`${currentTheme === 'light' ? '#5a5a5a' : '#B5B5B5'}`} />
+                         <span className='text-[0.8rem] dark:text-[#B5B5B5]'>Scroll for more</span>
                     </div>
                </animated.div>
           </div>
