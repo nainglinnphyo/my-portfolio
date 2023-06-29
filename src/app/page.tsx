@@ -15,7 +15,7 @@ function Home() {
       <section id='about' className='h-screen  pt-4' >
         <About />
       </section>
-      <section id='tech-stack' className='h-screen  pt-8 ' >
+      <section id='tech-stack' className='h-screen' >
         <TechStack />
       </section>
       <section id='project' className='h-screen  pt-8 ' >

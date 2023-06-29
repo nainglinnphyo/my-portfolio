@@ -7,8 +7,8 @@ const poppinsFont = Poppins({ subsets: ['latin'], weight: '700' })
 
 function About() {
      return (
-          <div className='h-ful md:pt-28 pt-20 justify-between flex flex-col md:px-52 md:w-[100%] lg:w-[75%] px-10 -z-50 md:space-y-8 space-y-8'>
-               <div className='flex flex-col md:space-y-4 space-y-6 items-center md:items-start'>
+          <div className='h-full md:pt-28 pt-10 justify-between flex flex-col md:px-52 md:w-[100%] lg:w-[75%] px-10 -z-50 md:space-y-8 space-y-8'>
+               <div className='flex flex-col md:space-y-4 space-y-2 items-center md:items-start'>
                     <div>
                          <h1 className={`md:text-3xl text-2xl text-[#5a5a5a] dark:text-[#B5B5B5] font-black tracking-wide leading-8 drop-shadow-2xl ${poppinsFont.className}`} >About Me</h1>
                     </div>
@@ -17,11 +17,11 @@ function About() {
                     </div>
                </div>
 
-               <div className='flex flex-col md:space-y-4 space-y-6 items-center md:items-start md:pt-10'>
+               <div className='flex flex-col md:space-y-4 space-y-3 items-center md:items-start md:pt-10'>
                     <div className='md:pb-4'>
-                         <h1 className={`md:text-3xl text-2xl text-[#5a5a5a] dark:text-[#B5B5B5] font-black tracking-wide leading-8 drop-shadow-2xl ${poppinsFont.className}`} >Work Experience</h1>
+                         <h1 className={`md:text-xl text-xl text-[#5a5a5a] dark:text-[#B5B5B5] font-black tracking-wide leading-8 drop-shadow-2xl ${poppinsFont.className}`} >Work Experience</h1>
                     </div>
-                    <div className='text-center md:text-start w-full border-b-2'>
+                    <div className='text-center md:text-start w-full border-b-2 py-2'>
                          <div className='flex justify-between md:pb-6 pb-2'>
                               <div className='flex justify-between flex-col w-1/2 space-y-2  text-[#5a5a5a] dark:text-[#B5B5B5]'>
                                    <h1 className='md:text-base text-[0.9rem] text-start'>Backend Developer </h1>
@@ -47,7 +47,7 @@ function About() {
                               </div>
                          </div>
                     </div>
-                    <div className='text-center md:text-start w-full border-b-2'>
+                    <div className='text-center md:text-start w-full border-b-2 py-2'>
                          <div className='flex justify-between md:pb-6 pb-2'>
                               <div className='flex justify-between flex-col md:w-1/2 space-y-2  text-[#5a5a5a] dark:text-[#B5B5B5]'>
                                    <h1 className='md:text-base text-[0.9rem] text-start'>Backend Developer </h1>
@@ -73,7 +73,7 @@ function About() {
                               </div>
                          </div>
                     </div>
-                    <div className='text-center md:text-start w-full border-b-2'>
+                    <div className='text-center md:text-start w-full border-b-2 py-2'>
                          <div className='flex justify-between md:pb-6 pb-2'>
                               <div className='flex justify-between flex-col w-1/2 space-y-2  text-[#5a5a5a] dark:text-[#B5B5B5]'>
                                    <h1 className='md:text-base text-[0.9rem] text-start'>Backend Developer </h1>
