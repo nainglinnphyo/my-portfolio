@@ -74,8 +74,8 @@ function HomePage() {
                          <animated.h1 style={textStyles2} className='text-base '>I'm a <span className='text-[#63c188] font-bold '>developer</span> based in Yangon.</animated.h1>
                     </div>
                     <animated.div style={imageStyle} className='md:w-80 pb-20 md:h-80 w-64 h-64 rounded-full justify-center items-center flex inset-0 object-cover'>
-                         <animated.div className='transition duration-700 ease-in-out hover:scale-105 items-center'>
-                              <Image loading='lazy' src='/image/ProfileImage.png' alt={''} width={500} height={500} />
+                         <animated.div className='transition duration-700 ease-in-out hover:scale-105 items-center rounded-full overflow-hidden'>
+                              <Image loading='lazy' src='/image/Image.png' alt={''} width={500} height={500} />
                          </animated.div>
                     </animated.div>
                </div >
