@@ -59,7 +59,7 @@ function Navbar() {
                                    <div className='md:hidden'>
                                         <SwitchModeButton />
                                    </div>
-                                   <div className='hidden md:block text-black dark:text-[#B5B5B5]'>Logo</div>
+                                   <div className='hidden md:block text-black dark:text-[#B5B5B5]'></div>
                               </div>
                               <div className='flex space-x-16 p-2'>
                                    <div className='md:hidden' onClick={() => setOpenMini(true)}>
