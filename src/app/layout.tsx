@@ -74,7 +74,7 @@ export default function RootLayout({
         />
       </head>
 
-      <body className={`${inter.className} w-full`}>
+      <body className={`${inter.className} w-full max-w-[100vw]`}>
         <InitialPageLoad>
           <Navbar />
           {children}
