@@ -32,7 +32,7 @@ function HomePage() {
           delay: 600
      })
      const imageStyle = useSpring({
-          from: { transform: 'translate3d(400px,0,0)', opacity: 0 },
+          from: { transform: 'translate3d(800px,0,0)', opacity: 0 },
           to: { transform: 'translate3d(0px,0,0)', opacity: 1 },
           delay: 100
      })
@@ -64,7 +64,7 @@ function HomePage() {
      return (
           <div className='items-center flex h-full justify-evenly flex-col -z-50'>
                <div className='md:flex max-sm:flex-col flex justify-center items-center md:space-x-10 md:pt-28 pt-2 dark:text-[#B5B5B5]'>
-                    <div className={`${inter.className} pb-20 p-4 space-y-1`}>
+                    <div className={`${inter.className} pb-20 space-y-1`}>
                          <animated.h1 className='text-[2.2rem] md:text-[2.7rem]  font-bold whitespace-normal flex' style={textStyles}>
                               <div className='text-[#63c188]'>Hi</div> &nbsp; 👋,
                          </animated.h1>
@@ -73,11 +73,11 @@ function HomePage() {
                          </animated.h1>
                          <animated.h1 style={textStyles2} className='text-base '>I'm a <span className='text-[#63c188] font-bold '>developer</span> based in Yangon.</animated.h1>
                     </div>
-                    <animated.div style={imageStyle} className='md:w-80 pb-20 md:h-80 w-64 h-64 rounded-full justify-center items-center flex inset-0 object-cover'>
-                         <animated.div className='transition duration-700 ease-in-out hover:scale-105 items-center rounded-full overflow-hidden'>
-                              <Image loading='lazy' src='/image/Image.png' alt={'profile'} width={500} height={500} />
-                         </animated.div>
+                    {/* <animated.div style={imageStyle} className='md:w-80 pb-20 md:h-80 w-64 h-64 justify-center items-center flex inset-0 object-cover'> */}
+                    <animated.div className='duration-600 ease-in-out hover:scale-105 md:w-80 mb-8 border-green-500 border-4 md:h-80 w-64 h-64 items-center rounded-full overflow-hidden' style={imageStyle}>
+                         <Image loading='lazy' src='/image/MyPic.png' alt={'profile'} width={500} height={500} />
                     </animated.div>
+                    {/* </animated.div> */}
                </div >
                <div className='w-full flex justify-center'>
                     <ul className='flex space-x-2 md:space-x-6'>
