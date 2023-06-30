@@ -21,12 +21,13 @@ function TechStack() {
           };
 
      }, []);
-
+     const size = useWindowSize();
+     const mobile: Boolean = size.width <= 640 ? true : false
      const bT1 = useSpring({
-          transform: scrollY >= 1300 ? 'translateY(100%)' : 'translateY(200%)', opacity: scrollY >= 1300 ? 1 : 0
+          transform: scrollY >= (mobile ? 2200 : 1600) ? 'translateY(100%)' : 'translateY(200%)', opacity: scrollY >= (mobile ? 2200 : 1600) ? 1 : 0
      })
      const bT2 = useSpring({
-          transform: scrollY >= 1500 ? 'translateY(100%)' : 'translateY(200%)', opacity: scrollY >= 1500 ? 1 : 0
+          transform: scrollY >= (mobile ? 2400 : 1800) ? 'translateY(100%)' : 'translateY(200%)', opacity: scrollY >= (mobile ? 2400 : 1800) ? 1 : 0
      })
      // 1250
      return (
@@ -37,34 +38,71 @@ function TechStack() {
                          <p className='font-normal text-sm'> Technologies I’ve been working with recently</p>
                     </div>
                     <div className="grid md:grid-cols-4 lg:grid-cols-4 grid-cols-2 lg:gap-4 md:gap-4 gap-8 w-full justify-center">
-                         <animated.div className='justify-center flex items-center w-full pb-4 lg:pb-10' style={bT1}>
+                         <animated.div className='justify-center flex-col text-center space-y-1 items-center w-full pb-4 lg:pb-10 md:pb-10' style={bT1}>
                               <Icon icon='logos:javascript' width={50} height={50} className='w-full lg:h-16 h-18' />
+                              <p>Javascript</p>
                          </animated.div>
-                         <animated.div className='justify-center flex items-center w-full pb-4 lg:pb-10' style={bT1}>
+                         <animated.div className='justify-center flex-col text-center space-y-1 items-center w-full pb-4 lg:pb-10 md:pb-10' style={bT1}>
                               <Icon icon='logos:react' width={50} height={50} className='w-full lg:h-16 h-18' />
+                              <p>React</p>
                          </animated.div>
-                         <animated.div className='justify-center flex items-center w-full pb-4 lg:pb-10' style={bT1}>
-                              <Icon icon='devicon:nextjs' width={50} height={50} className='w-full lg:h-16 h-18' />
+                         <animated.div className='justify-center flex-col text-center space-y-1 items-center w-full pb-4 lg:pb-10 md:pb-10' style={bT1}>
+                              <Icon icon='devicon:nextjs' width={50} height={50} className='w-full lg:h-16 h-18 dark:invert' />
+                              <p>Nextjs</p>
                          </animated.div>
-                         <animated.div className='justify-center flex items-center w-full pb-4 lg:pb-10' style={bT1}>
+                         <animated.div className='justify-center flex-col text-center space-y-1 items-center w-full pb-4 lg:pb-10 md:pb-10' style={bT1}>
                               <Icon icon='devicon:nodejs' width={50} height={50} className='w-full lg:h-16 h-18' />
+                              <p>Nodejs</p>
                          </animated.div>
-                         <animated.div className='justify-center flex items-center w-full pb-4 lg:pb-10' style={bT2}>
+                         <animated.div className='justify-center flex-col text-center space-y-1 items-center w-full pb-4 lg:pb-10 md:pb-10' style={bT2}>
                               <Icon icon='logos:nestjs' width={50} height={50} className='w-full lg:h-16 h-18' />
+                              <p>Nestjs</p>
                          </animated.div>
-                         <animated.div className='justify-center flex items-center w-full pb-4 lg:pb-10' style={bT2}>
+                         <animated.div className='justify-center flex-col text-center space-y-1 items-center w-full pb-4 lg:pb-10 md:pb-10' style={bT2}>
                               <Icon icon='logos:laravel' width={50} height={50} className='w-full lg:h-16 h-18' />
+                              <p>Laravel</p>
                          </animated.div>
-                         <animated.div className='justify-center flex items-center w-full pb-4 lg:pb-10' style={bT2}>
+                         <animated.div className='justify-center flex-col text-center space-y-1 items-center w-full pb-4 lg:pb-10 md:pb-10' style={bT2}>
                               <Icon icon='skill-icons:golang' width={50} height={50} className='w-full lg:h-16 h-18' />
+                              <p>Golang</p>
                          </animated.div>
-                         <animated.div className='justify-center flex items-center w-full pb-4 lg:pb-10' style={bT2}>
+                         <animated.div className='justify-center flex-col text-center space-y-1 items-center w-full pb-4 lg:pb-10 md:pb-10' style={bT2}>
                               <Icon icon='logos:graphql' width={50} height={50} className='w-full lg:h-16 h-18' />
+                              <p>Graphql</p>
                          </animated.div>
                     </div>
                </div>
           </div >
      )
+}
+
+function useWindowSize() {
+     const [windowSize, setWindowSize] = useState({
+          width: 0,
+          height: 0,
+     });
+
+     useEffect(() => {
+          // only execute all the code below in client side
+          // Handler to call on window resize
+          function handleResize() {
+               // Set window width/height to state
+               setWindowSize({
+                    width: window.innerWidth || 0,
+                    height: window.innerHeight || 0,
+               });
+          }
+
+          // Add event listener
+          window.addEventListener("resize", handleResize);
+
+          // Call handler right away so state gets updated with initial window size
+          handleResize();
+
+          // Remove event listener on cleanup
+          return () => window.removeEventListener("resize", handleResize);
+     }, []); // Empty array ensures that effect is only run on mount
+     return windowSize;
 }
 
 export default TechStack

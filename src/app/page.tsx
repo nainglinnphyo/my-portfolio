@@ -12,7 +12,7 @@ function Home() {
       <section id='' className='h-screen md:pt-8 '>
         <HomePage />
       </section>
-      <section id='about' className='h-screen  pt-4 ' >
+      <section id='about' className='h-full pt-4 ' >
         <About />
       </section>
       <section id='tech-stack' className='h-screen ' >
