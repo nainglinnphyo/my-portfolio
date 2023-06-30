@@ -17,7 +17,7 @@ export const InitialPageLoad = ({ children }: { children: React.ReactNode }) => 
                setLoad(true)
           }, 1200);
      }, []);
-     // if (!load) return <LoadingPage />
+     if (!load) return <LoadingPage />
      return (
           <>
                <Suspense>
