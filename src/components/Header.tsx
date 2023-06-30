@@ -51,46 +51,45 @@ function Navbar() {
      })
 
      return (
-          <></>
-          // <div className={`fixed top-0 left-0 right-0 w-full md:h-16 ${!openMini && 'h-14'} backdrop-blur-md z-50 md:text-base dark:text-[#B5B5B5] text-black `}>
-          //      {
-          //           openMini ? <MiniNav setOpenMini={setOpenMini} activeSectionId={activeSectionId} setActiveSectionId={setActiveSectionId} /> :
-          //                <animated.nav className='flex justify-between p-4' style={animateProps}>
-          //                     <div className='p-2'>
-          //                          <div className='md:hidden'>
-          //                               <SwitchModeButton />
-          //                          </div>
-          //                          <div className='hidden md:block text-black dark:text-[#B5B5B5]'></div>
-          //                     </div>
-          //                     <div className='flex space-x-16 p-2'>
-          //                          <div className='md:hidden' onClick={() => setOpenMini(true)}>
-          //                               <Icon icon='line-md:close-to-menu-alt-transition' width='1.7rem' height='1.7rem' />
-          //                          </div>
-          //                          <ul className={`space-x-10 md:flex hidden`}>
-          //                               <li onClick={() => {
-          //                                    setActiveSectionId('')
-          //                               }}>
-          //                                    <CustomLink href='' title='Home' activeSectionId={activeSectionId} />
-          //                               </li>
-          //                               <li onClick={() => setActiveSectionId('#about')}>
-          //                                    <CustomLink href='#about' title='About' activeSectionId={activeSectionId} />
-          //                               </li>
-          //                               <li onClick={() => setActiveSectionId('#tech-stack')}>
-          //                                    <CustomLink href='#tech-stack' title='Tech Stack' activeSectionId={activeSectionId} />
-          //                               </li>
-          //                               <li onClick={() => setActiveSectionId('#project')}>
-          //                                    <CustomLink href='#project' title='Project' activeSectionId={activeSectionId} />
-          //                               </li>
-          //                               <li className='cursor-pointer'>
-          //                                    <SwitchModeButton />
-          //                               </li>
-          //                          </ul>
+          <div className={`fixed top-0 left-0 right-0 w-full md:h-16 ${!openMini && 'h-14'} backdrop-blur-md z-50 md:text-base dark:text-[#B5B5B5] text-black `}>
+               {
+                    openMini ? <MiniNav setOpenMini={setOpenMini} activeSectionId={activeSectionId} setActiveSectionId={setActiveSectionId} /> :
+                         <animated.nav className='flex justify-between p-4' style={animateProps}>
+                              <div className='p-2'>
+                                   <div className='md:hidden'>
+                                        <SwitchModeButton />
+                                   </div>
+                                   <div className='hidden md:block text-black dark:text-[#B5B5B5]'></div>
+                              </div>
+                              <div className='flex space-x-16 p-2'>
+                                   <div className='md:hidden' onClick={() => setOpenMini(true)}>
+                                        <Icon icon='line-md:close-to-menu-alt-transition' width='1.7rem' height='1.7rem' />
+                                   </div>
+                                   <ul className={`space-x-10 md:flex hidden`}>
+                                        <li onClick={() => {
+                                             setActiveSectionId('')
+                                        }}>
+                                             <CustomLink href='' title='Home' activeSectionId={activeSectionId} />
+                                        </li>
+                                        <li onClick={() => setActiveSectionId('#about')}>
+                                             <CustomLink href='#about' title='About' activeSectionId={activeSectionId} />
+                                        </li>
+                                        <li onClick={() => setActiveSectionId('#tech-stack')}>
+                                             <CustomLink href='#tech-stack' title='Tech Stack' activeSectionId={activeSectionId} />
+                                        </li>
+                                        <li onClick={() => setActiveSectionId('#project')}>
+                                             <CustomLink href='#project' title='Project' activeSectionId={activeSectionId} />
+                                        </li>
+                                        <li className='cursor-pointer'>
+                                             <SwitchModeButton />
+                                        </li>
+                                   </ul>
 
-          //                     </div>
+                              </div>
 
-          //                </animated.nav >
-          //      }
-          // </div>
+                         </animated.nav >
+               }
+          </div>
      )
 }
 export default Navbar

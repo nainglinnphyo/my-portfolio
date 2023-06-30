@@ -18,9 +18,9 @@ function Home() {
       <section id='tech-stack' className='h-screen ' >
         <TechStack />
       </section>
-      <section id='project' className='h-screen  pt-8 ' >
+      {/* <section id='project' className='h-screen  pt-8 ' >
         project
-      </section>
+      </section> */}
     </div >
   )
 }
