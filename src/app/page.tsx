@@ -9,13 +9,13 @@ import React from 'react'
 function Home() {
   return (
     <div className=''>
-      <section id='' className='h-screen md:pt-8'>
+      <section id='' className='h-screen md:pt-8 '>
         <HomePage />
       </section>
-      <section id='about' className='h-screen  pt-4' >
+      <section id='about' className='h-screen  pt-4 ' >
         <About />
       </section>
-      <section id='tech-stack' className='h-screen' >
+      <section id='tech-stack' className='h-screen ' >
         <TechStack />
       </section>
       <section id='project' className='h-screen  pt-8 ' >

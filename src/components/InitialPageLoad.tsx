@@ -17,10 +17,10 @@ export const InitialPageLoad = ({ children }: { children: React.ReactNode }) => 
                setLoad(true)
           }, 1200);
      }, []);
-     if (!load) return <LoadingPage />
+     // if (!load) return <LoadingPage />
      return (
           <>
-               <Suspense fallback={<LoadingPage />}>
+               <Suspense>
                     {load && <ThemeProvider attribute="class">
                          <animated.div style={animation}>
                               {children}

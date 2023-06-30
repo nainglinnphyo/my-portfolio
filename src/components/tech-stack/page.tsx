@@ -30,7 +30,7 @@ function TechStack() {
      })
      // 1250
      return (
-          <div className='h-ful md:pt-28 pt-20 justify-between flex flex-col md:px-52 px-10 w-full -z-50 md:space-y-8 space-y-8' >
+          <div className='h-ful md:pt-28 pt-20 justify-between flex flex-col md:px-52 px-10 w-full -z-50 md:space-y-8 space-y-8 ' >
                <div className='flex flex-col md:space-y-4 items-center'>
                     <div className='text-center'>
                          <h1 className={`md:text-3xl text-2xl text-[#5a5a5a] dark:text-[#B5B5B5] font-black tracking-wide leading-8 drop-shadow-2xl ${poppinsFont.className}`} >My Tech Stack</h1>
