@@ -7,16 +7,16 @@ const poppinsFont = Poppins({ subsets: ['latin'], weight: '700' })
 
 function About() {
      return (
-          <div className='h-full md:pt-28 pt-10 justify-between lg:flex md:flex px-5 w-full -z-50 md:space-y-1'>
-               <div className='flex flex-col md:space-y-4 space-y-2 items-center lg:w-[60%] md:items-start lg:px-20 md:w-[100%]'>
+          <div className='h-full md:pt-28 pt-10 justify-between lg:flex md:flex px-10 w-full -z-50 md:space-y-1'>
+               <div className='flex flex-col md:space-y-4 space-y-2 items-center lg:w-[60%] md:items-start lg:px-10 md:w-[100%]'>
                     <div>
                          <h1 className={`md:text-3xl text-2xl text-[#5a5a5a] dark:text-[#B5B5B5] font-black tracking-wide leading-8 drop-shadow-2xl ${poppinsFont.className}`} >About Me</h1>
                     </div>
-                    <div className='text-center md:text-start'>
+                    <div className='text-justify'>
                          <p className='md:indent-20 indent-8 md:text-md text-sm leading-6 text-[#5a5a5a] dark:text-[#B5B5B5]'>I'm a skilled fullstack developer proficient in JavaScript, TypeScript, PHP, and Golang. With expertise in frontend and backend development, I create powerful and responsive web applications. My proficiency extends to server development, where I excel in utilizing Nginx and Apache to ensure optimal performance and security. Currently, I am actively involved in the development of <a href='https://farytaxi.com' target='_blank' className='text-blue-400'>farytaxi.com</a> and <a href='https://getbak.co' target='_blank' className='text-blue-400'>getbak.co</a>, microservices technologies like gRPC and Redis to build efficient and scalable solutions. With a passion for innovation and staying updated with the latest industry trends, I strive to deliver exceptional results that enhance user experiences and drive business growth.</p>
                     </div>
                </div>
-               <div className='lg:w-[40%] px-2 mt-10'>
+               <div className='lg:w-[40%] lg:px-10 mt-10'>
                     <ul className="relative border-l border-gray-200 dark:border-gray-700">
                          <li className="mb-10 ml-6">
                               <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
@@ -25,8 +25,8 @@ function About() {
                               <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Backend Developer</h3>
                               <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March-2022 to current</time>
                               <div className="mb-4 font-normal text-gray-500 dark:text-gray-400 md:text-md text-sm">
-                                   <p className='text-gray-800 font-black dark:text-gray-400'> Responsibilities:</p>
-                                   <ul className='list-disc space-y-1'>
+                                   <p className='text-gray-800 font-black dark:text-gray-400 py-2'> Responsibilities:</p>
+                                   <ul className='list-disc space-y-1 lg:text-justify'>
                                         <li>Integration of user-facing elements developed by front-end and mobile developers with server side logic</li>
                                         <li>Writing reusable, testable, and efficient code</li>
                                         <li>Design and implementation of low-latency, high-availability, and performant applications</li>
@@ -44,8 +44,8 @@ function About() {
                               <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Junior Web Developer</h3>
                               <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Jan-2021 to Feb-2022</time>
                               <div className="mb-4 font-normal text-gray-500 dark:text-gray-400 md:text-md text-sm">
-                                   <p className='text-gray-800 font-black dark:text-gray-400'> Responsibilities:</p>
-                                   <ul className='list-disc space-y-1'>
+                                   <p className='text-gray-800 font-black dark:text-gray-400 py-2'> Responsibilities:</p>
+                                   <ul className='list-disc space-y-1 lg:text-justify'>
                                         <li>Planned website development, converting mockups into usable web presence with HTML, JavaScript, AJAX and JSON coding.</li>
                                         <li>Pulled from PHP, SQL, JavaScript and other back-end library knowledge to bolster programming resources</li>
                                         <li>Designed REST calls using React to streamline user interface performance.</li>
@@ -61,8 +61,8 @@ function About() {
                               <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Data Center Operator , IT Support(Port EDI System)</h3>
                               <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">October-2018 to Feb-2022</time>
                               <div className="mb-4 font-normal text-gray-500 dark:text-gray-400 md:text-md text-sm">
-                                   <p className='text-gray-800 font-black dark:text-gray-400'> Responsibilities:</p>
-                                   <ul className='list-disc space-y-1'>
+                                   <p className='text-gray-800 font-black dark:text-gray-400 py-2'> Responsibilities:</p>
+                                   <ul className='list-disc space-y-1 lg:text-justify'>
                                         <li>Provided network operations support when monitoring issues occurred unexpectedly.</li>
                                         <li>Regularly referenced reports or system operations, task lists, problems and resolution updates.</li>
                                         <li>Designed and evaluated WAN and LAN connectivity technologies.</li>
