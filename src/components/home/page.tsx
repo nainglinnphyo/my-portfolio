@@ -32,9 +32,9 @@ function HomePage() {
           delay: 600
      })
      const imageStyle = useSpring({
-          from: { transform: 'translate3d(800px,0,0)', opacity: 0 },
-          to: { transform: 'translate3d(0px,0,0)', opacity: 1 },
-          delay: 100
+          from: { transform: 'translateY(100%)', opacity: 0 },
+          to: { transform: 'translateX(0%)', opacity: 1 },
+          // delay: 100
      })
 
      const bT1 = useSpring({
@@ -62,7 +62,7 @@ function HomePage() {
      })
 
      return (
-          <div className="items-center flex h-full justify-evenly flex-col -z-50 bg-[url('/image/Background.svg')] mt-14 lg:mt-5">
+          <div className="items-center flex h-full w-screen  justify-evenly flex-col -z-50">
                <div className='md:flex max-sm:flex-col flex justify-center items-center md:space-x-10 md:pt-28 pt-2 dark:text-[#B5B5B5]'>
                     <div className={`${inter.className} pb-20 space-y-1`}>
                          <animated.h1 className='text-[2.2rem] md:text-[2.7rem]  font-bold whitespace-normal flex' style={textStyles}>
