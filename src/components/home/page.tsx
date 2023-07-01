@@ -62,7 +62,7 @@ function HomePage() {
      })
 
      return (
-          <div className='items-center flex h-full justify-evenly flex-col -z-50 '>
+          <div className="items-center flex h-full justify-evenly flex-col -z-50 bg-[url('/image/Background.svg')]">
                <div className='md:flex max-sm:flex-col flex justify-center items-center md:space-x-10 md:pt-28 pt-2 dark:text-[#B5B5B5]'>
                     <div className={`${inter.className} pb-20 space-y-1`}>
                          <animated.h1 className='text-[2.2rem] md:text-[2.7rem]  font-bold whitespace-normal flex' style={textStyles}>
