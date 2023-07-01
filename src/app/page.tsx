@@ -8,7 +8,7 @@ import React from 'react'
 
 function Home() {
   return (
-    <div className=''>
+    <div className="">
       <section id='' className='h-screen md:pt-8 '>
         <HomePage />
       </section>
