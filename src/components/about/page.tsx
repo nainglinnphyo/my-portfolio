@@ -3,17 +3,23 @@
 import { Icon } from '@iconify/react'
 import { Poppins } from 'next/font/google'
 import React, { useState } from 'react'
+import Image from 'next/image'
 const poppinsFont = Poppins({ subsets: ['latin'], weight: '700' })
 
 function About() {
      return (
           <div className='h-full md:pt-28 pt-10 justify-between lg:flex md:flex px-10 w-full -z-50 md:space-y-1'>
-               <div className='flex flex-col md:space-y-4 space-y-2 items-center lg:w-[60%] md:items-start lg:px-10 md:w-[100%]'>
-                    <div>
-                         <h1 className={`md:text-3xl text-2xl text-[#5a5a5a] dark:text-[#B5B5B5] font-black tracking-wide leading-8 drop-shadow-2xl ${poppinsFont.className}`} >About Me</h1>
+               <div className='flex flex-col md:space-y-4 space-y-2 items-center lg:w-[60%]'>
+                    <div className='flex flex-col md:space-y-4 space-y-2 items-center w-full md:items-start lg:px-10 lg:mb-28 md:mb-20 mb-10'>
+                         <div>
+                              <h1 className={`md:text-3xl text-2xl text-[#5a5a5a] dark:text-[#B5B5B5] font-black tracking-wide leading-8 ${poppinsFont.className}`} >About Me</h1>
+                         </div>
+                         <div className='text-justify'>
+                              <p className='md:indent-20 indent-8 md:text-md text-sm leading-6 text-[#5a5a5a] dark:text-[#B5B5B5]'>I'm a skilled fullstack developer proficient in JavaScript, TypeScript, PHP, and Golang. With expertise in frontend and backend development, I create powerful and responsive web applications. My proficiency extends to server development, where I excel in utilizing Nginx and Apache to ensure optimal performance and security. Currently, I am actively involved in the development of <a href='https://farytaxi.com' target='_blank' className='text-blue-400'>farytaxi.com</a> and <a href='https://getbak.co' target='_blank' className='text-blue-400'>getbak.co</a>, microservices technologies like gRPC and Redis to build efficient and scalable solutions. With a passion for innovation and staying updated with the latest industry trends, I strive to deliver exceptional results that enhance user experiences and drive business growth.</p>
+                         </div>
                     </div>
-                    <div className='text-justify'>
-                         <p className='md:indent-20 indent-8 md:text-md text-sm leading-6 text-[#5a5a5a] dark:text-[#B5B5B5]'>I'm a skilled fullstack developer proficient in JavaScript, TypeScript, PHP, and Golang. With expertise in frontend and backend development, I create powerful and responsive web applications. My proficiency extends to server development, where I excel in utilizing Nginx and Apache to ensure optimal performance and security. Currently, I am actively involved in the development of <a href='https://farytaxi.com' target='_blank' className='text-blue-400'>farytaxi.com</a> and <a href='https://getbak.co' target='_blank' className='text-blue-400'>getbak.co</a>, microservices technologies like gRPC and Redis to build efficient and scalable solutions. With a passion for innovation and staying updated with the latest industry trends, I strive to deliver exceptional results that enhance user experiences and drive business growth.</p>
+                    <div className='items-center'>
+                         <Image src='/Image/aboutSvg.svg' width={500} height={500} alt={''} />
                     </div>
                </div>
                <div className='lg:w-[40%] lg:px-10 mt-10'>
