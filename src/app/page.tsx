@@ -10,10 +10,10 @@ import React from 'react'
 function Home() {
   return (
     <div className="">
-      <section id='' className="h-screen md:pt-8 w-screen bg-[url('/image/Background.svg')]">
+      <section id='home' className="h-screen md:pt-8 w-screen bg-[url('/image/Background.svg')">
         <HomePage />
       </section>
-      <section id='about' className="h-full pt-4" >
+      <section id='about' className="h-full pt-4 max-sm:mt-4" >
         <About />
       </section>
       <section id='tech-stack' className='h-screen ' >

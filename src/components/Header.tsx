@@ -30,6 +30,10 @@ function Navbar() {
                     const sectionTop = section.offsetTop;
                     const sectionHeight = section.offsetHeight;
                     const scrollPosition = window.scrollY;
+                    if (scrollPosition <= 750) {
+                         setActiveSectionId('')
+                    }
+
                     if (
                          scrollPosition >= sectionTop - sectionHeight / 2 &&
                          scrollPosition < sectionTop + sectionHeight - sectionHeight / 2
