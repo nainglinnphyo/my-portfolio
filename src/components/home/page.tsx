@@ -79,7 +79,7 @@ function HomePage() {
                </div >
                <div className='w-full flex justify-center'>
                     <ul className='flex space-x-2 md:space-x-6'>
-                         <animated.li style={bT1} className='md:w-36 md:h-12 w-28 h-10 rounded-md border-[#5a5a5a] dark:border-[#9d9d9d] border-b-[0.008rem] shadow-md hover:shadow-2xl hover:duration-700 dark:hover:shadow-md dark:hover:shadow-[#b5b5b5] border-dashed flex justify-center items-center cursor-pointer'>
+                         <animated.li style={bT1} className='md:w-36 md:h-12 w-28 h-10 rounded-md border-[#5a5a5a] dark:border-[#9d9d9d] border-b-[0.06rem] shadow-md hover:shadow-2xl  hover:shadow-[#e73634] hover:duration-700 border-dashed flex justify-center items-center cursor-pointer'>
                               <Link href='' >
                                    <div className='flex items-center justify-center text-[#5a5a5a] dark:text-[#fff] space-x-1 '>
                                         <Icon icon='mdi:github' width='1.4rem' height='1.4rem' color={`${currentTheme === 'light' ? '#5a5a5a' : '#fff'}`} />
@@ -87,7 +87,7 @@ function HomePage() {
                                    </div>
                               </Link>
                          </animated.li>
-                         <animated.li style={bT2} className='md:w-36 md:h-12 w-28 h-10 rounded-md border-[#5a5a5a] dark:border-[#747474] border-b-[0.008rem] shadow-md hover:shadow-2xl hover:duration-700 dark:hover:shadow-md dark:hover:shadow-[#b5b5b5] border-dashed flex justify-center items-center cursor-pointer'>
+                         <animated.li style={bT2} className='md:w-36 md:h-12 w-28 h-10 rounded-md border-[#5a5a5a] dark:border-[#9d9d9d] border-b-[0.06rem] shadow-md hover:shadow-2xl hover:duration-700  hover:shadow-[#fcdb17] border-dashed flex justify-center items-center cursor-pointer'>
                               <Link href='' >
                                    <div className='flex items-center justify-center text-[#5a5a5a] dark:text-[#fff] space-x-1'>
                                         <Icon icon='entypo-social:linkedin-with-circle' width='1.4rem' height='1.4rem' color={`${currentTheme === 'light' ? '#5a5a5a' : '#fff'}`} />
@@ -95,7 +95,7 @@ function HomePage() {
                                    </div>
                               </Link>
                          </animated.li>
-                         <animated.li style={bT3} className='md:w-36 md:h-12 w-28 h-10 rounded-md border-[#5a5a5a] dark:border-[#747474] border-b-[0.008rem] shadow-md hover:shadow-2xl hover:duration-700 dark:hover:shadow-md dark:hover:shadow-[#b5b5b5] border-dashed flex justify-center items-center cursor-pointer'>
+                         <animated.li style={bT3} className='md:w-36 md:h-12 w-28 h-10 rounded-md border-[#5a5a5a] dark:border-[#9d9d9d] border-b-[0.06rem] shadow-md hover:shadow-2xl hover:duration-700  hover:shadow-[#027b0c]  border-dashed flex justify-center items-center cursor-pointer'>
                               <Link href='' >
                                    <div className='flex items-center justify-center text-[#5a5a5a] dark:text-[#fff] space-x-1'>
                                         <Icon icon='simple-icons:telegram' width='1.4rem' height='1.4rem' color={`${currentTheme === 'light' ? '#5a5a5a' : '#fff'}`} />
