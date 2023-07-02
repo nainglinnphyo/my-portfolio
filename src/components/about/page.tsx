@@ -19,7 +19,7 @@ function About() {
                          </div>
                     </div>
                     <div className='items-center'>
-                         <Image src='/Image/aboutSvg.svg' width={500} height={500} alt={''} />
+                         <Image src='/image/About.svg' width={500} height={500} alt={''} />
                     </div>
                </div>
                <div className='lg:w-[40%] lg:px-10 mt-10'>
