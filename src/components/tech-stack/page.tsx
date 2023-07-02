@@ -24,10 +24,10 @@ function TechStack() {
      const size = useWindowSize();
      const mobile: Boolean = size.width <= 640 ? true : false
      const bT1 = useSpring({
-          transform: scrollY >= (mobile ? 2200 : 1600) ? 'translateY(100%)' : 'translateY(200%)', opacity: scrollY >= (mobile ? 2200 : 1600) ? 1 : 0
+          transform: scrollY >= (mobile ? 2700 : 1750) ? 'translateY(100%)' : 'translateY(200%)', opacity: scrollY >= (mobile ? 2700 : 1750) ? 1 : 0
      })
      const bT2 = useSpring({
-          transform: scrollY >= (mobile ? 2400 : 1800) ? 'translateY(100%)' : 'translateY(200%)', opacity: scrollY >= (mobile ? 2400 : 1800) ? 1 : 0
+          transform: scrollY >= (mobile ? 2800 : 1900) ? 'translateY(100%)' : 'translateY(200%)', opacity: scrollY >= (mobile ? 2850 : 1900) ? 1 : 0
      })
      // 1250
      return (

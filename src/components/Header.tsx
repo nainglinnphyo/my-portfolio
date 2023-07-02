@@ -54,7 +54,7 @@ function Navbar() {
           <div className={`fixed top-0 left-0 w-full shadow-sm md:h-16 ${!openMini && 'h-14'} backdrop-blur-md z-50 md:text-base dark:text-[#B5B5B5] text-black `}>
                {
                     openMini ? <MiniNav setOpenMini={setOpenMini} activeSectionId={activeSectionId} setActiveSectionId={setActiveSectionId} /> :
-                         <animated.nav className='flex justify-between p-4' style={animateProps}>
+                         <animated.nav className='flex justify-between px-4 py-2' style={animateProps}>
                               <div className='p-2'>
                                    <div className='md:hidden'>
                                         <SwitchModeButton />

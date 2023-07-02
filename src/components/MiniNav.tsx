@@ -37,8 +37,8 @@ function MiniNav({ setOpenMini, activeSectionId, setActiveSectionId }: any) {
 
 
      return (
-          <animated.div className='w-full h-screen p-4 z-50' style={props}>
-               <div className=' flex justify-between p-2'>
+          <animated.div className='w-full h-screen z-50' style={props}>
+               <div className=' px-6 py-[1.2rem] flex justify-between'>
                     <div>
 
                     </div>
