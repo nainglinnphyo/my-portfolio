@@ -18,8 +18,8 @@ function About() {
                               <p className='md:indent-20 indent-8 md:text-md text-sm leading-6 text-[#5a5a5a] dark:text-[#B5B5B5]'>I'm a skilled fullstack developer proficient in JavaScript, TypeScript, PHP, and Golang. With expertise in frontend and backend development, I create powerful and responsive web applications. My proficiency extends to server development, where I excel in utilizing Nginx and Apache to ensure optimal performance and security. Currently, I am actively involved in the development of <a href='https://farytaxi.com' target='_blank' className='text-blue-400'>farytaxi.com</a> and <a href='https://getbak.co' target='_blank' className='text-blue-400'>getbak.co</a>, microservices technologies like gRPC and Redis to build efficient and scalable solutions. With a passion for innovation and staying updated with the latest industry trends, I strive to deliver exceptional results that enhance user experiences and drive business growth.</p>
                          </div>
                     </div>
-                    <div className='items-center'>
-                         <Image src='/image/About.svg' width={500} height={500} alt={''} />
+                    <div className='items-center hidden md:block'>
+                         <Image src='/image/About.svg' width={400} height={400} alt={''} />
                     </div>
                </div>
                <div className='lg:w-[40%] lg:px-10 mt-10'>

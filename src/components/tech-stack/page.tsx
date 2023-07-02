@@ -24,14 +24,15 @@ function TechStack() {
      const size = useWindowSize();
      const mobile: Boolean = size.width <= 640 ? true : false
      const bT1 = useSpring({
-          transform: scrollY >= (mobile ? 2700 : 1750) ? 'translateY(100%)' : 'translateY(200%)', opacity: scrollY >= (mobile ? 2700 : 1750) ? 1 : 0
+          transform: scrollY >= (mobile ? 2300 : 1600) ? 'translateY(100%)' : 'translateY(200%)', opacity: scrollY >= (mobile ? 2300 : 1600) ? 1 : 0
      })
      const bT2 = useSpring({
-          transform: scrollY >= (mobile ? 2800 : 1900) ? 'translateY(100%)' : 'translateY(200%)', opacity: scrollY >= (mobile ? 2850 : 1900) ? 1 : 0
+          delay: 200,
+          transform: scrollY >= (mobile ? 2500 : 1800) ? 'translateY(100%)' : 'translateY(200%)', opacity: scrollY >= (mobile ? 2500 : 1800) ? 1 : 0
      })
      // 1250
      return (
-          <div className='h-ful md:pt-28 pt-20 justify-between flex flex-col md:px-52 px-10 w-full -z-50 md:space-y-8 space-y-8 ' >
+          <div className='h-full md:pt-28 pt-20 justify-between flex flex-col md:px-52 px-10 w-full -z-50 md:space-y-8 space-y-8 ' >
                <div className='flex flex-col md:space-y-4 items-center'>
                     <div className='text-center'>
                          <h1 className={`md:text-3xl text-2xl text-[#5a5a5a] dark:text-[#B5B5B5] font-black tracking-wide leading-8 drop-shadow-2xl ${poppinsFont.className}`} >My Tech Stack</h1>

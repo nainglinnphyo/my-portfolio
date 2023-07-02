@@ -2,6 +2,7 @@ import Navbar from '@/components/Header'
 import SwitchModeButton from '@/components/Switcher'
 import About from '@/components/about/page'
 import HomePage from '@/components/home/page'
+import Project from '@/components/project/page'
 import TechStack from '@/components/tech-stack/page'
 import Image from 'next/image'
 import React from 'react'
@@ -18,8 +19,8 @@ function Home() {
       <section id='tech-stack' className='h-screen ' >
         <TechStack />
       </section>
-      <section id='project' className='h-screen  pt-8 ' >
-        project
+      <section id='project' className='h-screen' >
+        <Project />
       </section>
     </div >
   )

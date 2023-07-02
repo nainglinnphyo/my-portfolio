@@ -5,6 +5,7 @@ import { InitialPageLoad } from '@/components/InitialPageLoad'
 import Head from 'next/head'
 import favicon from './favicon.ico';
 import { Metadata } from 'next'
+import Footer from '@/components/Footer'
 
 const inter = Roboto_Slab({ subsets: ['latin'], weight: '400' })
 
@@ -50,6 +51,7 @@ export default function RootLayout({
         <InitialPageLoad>
           <Navbar />
           {children}
+          <Footer />
         </InitialPageLoad>
       </body>
     </html>
