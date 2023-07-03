@@ -53,7 +53,7 @@ function Project() {
                          </div>
                     </div>
                     <div className='bg-[#363636] rounded-lg'>
-                         <Image src='/image/go.webp' alt='' width={200} height={200} className='w-full rounded-t-lg h-40' />
+                         <Image src='/image/Go.webp' alt='' width={200} height={200} className='w-full rounded-t-lg h-40' />
                          <div className='p-4'>
                               <h1 className='text-[#cccccc]'>Golang Gin Jwt Authentication</h1>
                               <p className='text-sm text-[#818181] py-2'>
