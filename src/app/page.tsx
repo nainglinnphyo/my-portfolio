@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import Navbar from '@/components/Header'
 import SwitchModeButton from '@/components/Switcher'
 import About from '@/components/about/page'
@@ -22,6 +23,7 @@ function Home() {
       <section id='project' className='h-screen' >
         <Project />
       </section>
+      {/* <Footer /> */}
     </div >
   )
 }
