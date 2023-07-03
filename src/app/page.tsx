@@ -9,7 +9,7 @@ import React from 'react'
 
 function Home() {
   return (
-    <div className="mt-3 md:mt-0">
+    <div className="mt-4 md:mt-0">
       <section id='home' className="h-screen md:pt-8 w-screen bg-background_one">
         <HomePage />
       </section>

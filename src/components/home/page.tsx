@@ -96,12 +96,12 @@ function HomePage() {
                          </animated.li>
                     </ul>
                </div>
-               <animated.div style={arrow} className='flex md:justify-end justify-center h-10 items-center w-full px-10 animate-bounce'>
+               {/* <animated.div style={arrow} className='flex md:justify-end justify-center h-10 items-center w-full px-10 animate-bounce'>
                     <div className='flex'>
                          <Icon icon="tabler:arrow-big-down-line" width='1.2rem' height='1.2rem' color={`${currentTheme === 'light' ? '#5a5a5a' : '#B5B5B5'}`} />
                          <span className='text-[0.8rem] dark:text-[#B5B5B5]'>Scroll for more</span>
                     </div>
-               </animated.div>
+               </animated.div> */}
           </div>
      )
 }
