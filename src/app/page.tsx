@@ -9,8 +9,8 @@ import React from 'react'
 
 function Home() {
   return (
-    <div className="">
-      <section id='home' className="h-screen md:pt-8 w-screen bg-[url('/image/Background.svg')">
+    <div className="mt-3 md:mt-0">
+      <section id='home' className="h-screen md:pt-8 w-screen bg-background_one">
         <HomePage />
       </section>
       <section id='about' className="h-full pt-4 max-sm:mt-4" >

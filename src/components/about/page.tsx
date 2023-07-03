@@ -15,7 +15,16 @@ function About() {
                               <h1 className={`md:text-3xl text-2xl text-[#5a5a5a] dark:text-[#B5B5B5] font-black tracking-wide leading-8 ${poppinsFont.className}`} >About Me</h1>
                          </div>
                          <div className='text-justify'>
-                              <p className='md:indent-20 indent-8 md:text-md text-sm leading-6 text-[#5a5a5a] dark:text-[#B5B5B5]'>I'm a skilled fullstack developer proficient in JavaScript, TypeScript, PHP, and Golang. With expertise in frontend and backend development, I create powerful and responsive web applications. My proficiency extends to server development, where I excel in utilizing Nginx and Apache to ensure optimal performance and security. Currently, I am actively involved in the development of <a href='https://farytaxi.com' target='_blank' className='text-blue-400'>farytaxi.com</a> and <a href='https://getbak.co' target='_blank' className='text-blue-400'>getbak.co</a>, microservices technologies like gRPC and Redis to build efficient and scalable solutions. With a passion for innovation and staying updated with the latest industry trends, I strive to deliver exceptional results that enhance user experiences and drive business growth.</p>
+                              <p>Hello, I'm [Your Name], a highly skilled fullstack developer with expertise in JavaScript, TypeScript, PHP, and Golang. With a deep understanding of frontend and backend development, I have the ability to create robust and dynamic web applications. My proficiency extends to server development, where I excel in configuring and managing servers using Nginx and Apache, ensuring optimal performance and security for web applications.
+
+                                   I am currently engaged in the development of two exciting products: <a href='https://farytaxi.com' target='_blank' className='text-blue-400'>farytaxi.com</a>  and <a href='https://getbak.com' target='_blank' className='text-blue-400'>farytaxi.com</a> . Leveraging cutting-edge technologies such as gRPC and Redis, I am building scalable and efficient solutions that address complex challenges. These projects demonstrate my ability to design and implement high-performance systems that provide seamless user experiences.
+
+                                   With a passion for continuous learning and staying up-to-date with emerging trends, I constantly seek opportunities to expand my skill set and explore new technologies. I am dedicated to delivering exceptional results by combining my technical expertise with a creative and problem-solving mindset.
+
+                                   Throughout my career, I have demonstrated a strong work ethic, effective communication skills, and the ability to collaborate effectively in both team environments and individual projects. I thrive in dynamic and challenging environments, where I can utilize my diverse skill set to drive innovation and deliver outstanding software solutions.
+
+                                   I am excited about the opportunity to contribute my skills and experience to projects that push the boundaries of what is possible in the world of web development. If you are looking for a dedicated and versatile fullstack developer, I would love to connect and discuss how I can contribute to your next venture.</p>
+                              {/* <p className='md:indent-20 indent-8 md:text-md text-sm leading-6 text-[#5a5a5a] dark:text-[#B5B5B5]'>I'm a skilled fullstack developer proficient in JavaScript, TypeScript, PHP, and Golang. With expertise in frontend and backend development, I create powerful and responsive web applications. My proficiency extends to server development, where I excel in utilizing Nginx and Apache to ensure optimal performance and security. Currently, I am actively involved in the development of and <a href='https://getbak.co' target='_blank' className='text-blue-400'>getbak.co</a>, microservices technologies like gRPC and Redis to build efficient and scalable solutions. With a passion for innovation and staying updated with the latest industry trends, I strive to deliver exceptional results that enhance user experiences and drive business growth.</p> */}
                          </div>
                     </div>
                     <div className='items-center hidden md:block'>
@@ -78,89 +87,6 @@ function About() {
                          </li>
                     </ul>
                </div>
-               {/* <div className='flex flex-col md:space-y-4 space-y-3 items-center md:items-start md:pt-10'>
-                    <div className='md:pb-4'>
-                         <h1 className={`md:text-xl text-xl text-[#5a5a5a] dark:text-[#B5B5B5] font-black tracking-wide leading-8 drop-shadow-2xl ${poppinsFont.className}`} >Work Experience</h1>
-                    </div>
-                    <div className='text-center md:text-start w-full border-b-2 py-2'>
-                         <div className='flex justify-between md:pb-6 pb-2'>
-                              <div className='flex justify-between flex-col w-1/2 space-y-2  text-[#5a5a5a] dark:text-[#B5B5B5]'>
-                                   <h1 className='md:text-base text-[0.9rem] text-start'>Backend Developer </h1>
-                                   <div className='flex justify-between'>
-                                        <div className='flex space-x-1'>
-                                             <Icon icon='material-symbols:apartment-rounded' />
-                                             <h1 className='md:text-xs text-[0.7rem] font-semibold'>Xsphere Co.,Ltd</h1>
-                                        </div>
-                                        <div className='space-x-1 hidden md:flex'>
-                                             <Icon icon='ep:location-filled' />
-                                             <h1 className='text-xs font-semibold'>Yangon</h1>
-                                        </div>
-                                   </div>
-                              </div>
-                              <div className='space-y-2 flex flex-col text-[#5a5a5a] dark:text-[#B5B5B5]'>
-                                   <div className='items-end flex justify-end'>
-                                        <h1 className='px-2 py-1 rounded-xl bg-[#d7ffe1] text-xs text-[#008C0E] '>fulltime</h1>
-                                   </div>
-                                   <div className='flex space-x-2'>
-                                        <Icon icon='uis:calender' />
-                                        <h1 className='text-xs'>March-2022 to current</h1>
-                                   </div>
-                              </div>
-                         </div>
-                    </div>
-                    <div className='text-center md:text-start w-full border-b-2 py-2'>
-                         <div className='flex justify-between md:pb-6 pb-2'>
-                              <div className='flex justify-between flex-col md:w-1/2 space-y-2  text-[#5a5a5a] dark:text-[#B5B5B5]'>
-                                   <h1 className='md:text-base text-[0.9rem] text-start'>Backend Developer </h1>
-                                   <div className='flex justify-between'>
-                                        <div className='flex space-x-1'>
-                                             <Icon icon='material-symbols:apartment-rounded' />
-                                             <h1 className='md:text-xs text-[0.7rem] font-semibold'>Xsphere Co.,Ltd</h1>
-                                        </div>
-                                        <div className='space-x-1 hidden md:flex'>
-                                             <Icon icon='ep:location-filled' />
-                                             <h1 className='text-xs font-semibold'>Yangon</h1>
-                                        </div>
-                                   </div>
-                              </div>
-                              <div className='space-y-2 flex flex-col text-[#5a5a5a] dark:text-[#B5B5B5]'>
-                                   <div className='items-end flex justify-end'>
-                                        <h1 className='px-2 py-1 rounded-xl bg-[#d7ffe1] text-xs text-[#008C0E] '>fulltime</h1>
-                                   </div>
-                                   <div className='flex space-x-2'>
-                                        <Icon icon='uis:calender' />
-                                        <h1 className='text-xs'>March-2022 to current</h1>
-                                   </div>
-                              </div>
-                         </div>
-                    </div>
-                    <div className='text-center md:text-start w-full border-b-2 py-2'>
-                         <div className='flex justify-between md:pb-6 pb-2'>
-                              <div className='flex justify-between flex-col w-1/2 space-y-2  text-[#5a5a5a] dark:text-[#B5B5B5]'>
-                                   <h1 className='md:text-base text-[0.9rem] text-start'>Backend Developer </h1>
-                                   <div className='flex justify-between'>
-                                        <div className='flex space-x-1'>
-                                             <Icon icon='material-symbols:apartment-rounded' />
-                                             <h1 className='md:text-xs text-[0.7rem] font-semibold'>Xsphere Co.,Ltd</h1>
-                                        </div>
-                                        <div className='space-x-1 hidden md:flex'>
-                                             <Icon icon='ep:location-filled' />
-                                             <h1 className='text-xs font-semibold'>Yangon</h1>
-                                        </div>
-                                   </div>
-                              </div>
-                              <div className='space-y-2 flex flex-col text-[#5a5a5a] dark:text-[#B5B5B5]'>
-                                   <div className='items-end flex justify-end'>
-                                        <h1 className='px-2 py-1 rounded-xl bg-[#d7ffe1] text-xs text-[#008C0E] '>fulltime</h1>
-                                   </div>
-                                   <div className='flex space-x-2'>
-                                        <Icon icon='uis:calender' />
-                                        <h1 className='text-xs'>March-2022 to current</h1>
-                                   </div>
-                              </div>
-                         </div>
-                    </div>
-               </div> */}
           </div >
      )
 }
