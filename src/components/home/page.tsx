@@ -63,7 +63,7 @@ function HomePage() {
 
      return (
           <div className="items-center flex h-full w-screen justify-evenly flex-col -z-50 ">
-               <div className='md:flex max-sm:flex-col flex justify-center items-center md:space-x-10 md:pt-28 pt-2 dark:text-[#B5B5B5]'>
+               <div className='md:flex max-sm:flex-col flex justify-center items-center md:space-x-10 md:pt-28 pt-2 dark:text-[#B5B5B5] '>
                     <div className={`${inter.className} pb-20 space-y-1`}>
                          <animated.h1 className='text-[2.2rem] md:text-[2.7rem]  font-bold whitespace-normal flex' style={textStyles}>
                               <div className='text-[#63c188]'>Hi</div> &nbsp; 👋,
@@ -77,7 +77,7 @@ function HomePage() {
                          <Image loading='lazy' src='/image/MyPic.png' alt={'profile'} width={500} height={500} />
                     </animated.div>
                </div >
-               <div className='w-full flex justify-center'>
+               <div className='w-full flex justify-center mb-16'>
                     <ul className='flex space-x-2 md:space-x-6'>
                          <animated.li style={bT1} className='md:w-14 md:h-14 w-10 h-10 rounded-full border-[#5a5a5a] dark:border-[#9d9d9d] border-b-[0.12rem] shadow-md hover:shadow-2xl hover:duration-700  hover:shadow-[#027b0c] flex justify-center items-center cursor-pointer'>
                               <Link href='' >
@@ -96,7 +96,7 @@ function HomePage() {
                          </animated.li>
                     </ul>
                </div>
-               {/* <animated.div style={arrow} className='flex md:justify-end justify-center h-10 items-center w-full px-10 animate-bounce'>
+               {/* <animated.div style={arrow} className='flex md:justify-end justify-center h-10 items-center w-full px-10 animate-bounce sm:mb-20'>
                     <div className='flex'>
                          <Icon icon="tabler:arrow-big-down-line" width='1.2rem' height='1.2rem' color={`${currentTheme === 'light' ? '#5a5a5a' : '#B5B5B5'}`} />
                          <span className='text-[0.8rem] dark:text-[#B5B5B5]'>Scroll for more</span>
