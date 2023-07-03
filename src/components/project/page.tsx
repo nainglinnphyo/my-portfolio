@@ -53,7 +53,7 @@ function Project() {
                          </div>
                     </div>
                     <div className='bg-[#363636] rounded-lg'>
-                         <Image src='/image/Golang.png' alt='' width={200} height={200} className='w-full rounded-t-lg h-40' />
+                         <Image src='/image/go.webp' alt='' width={200} height={200} className='w-full rounded-t-lg h-40' />
                          <div className='p-4'>
                               <h1 className='text-[#cccccc]'>Golang Gin Jwt Authentication</h1>
                               <p className='text-sm text-[#818181] py-2'>
@@ -71,7 +71,7 @@ function Project() {
                          </div>
                     </div>
                     <div className='bg-[#363636] rounded-lg'>
-                         <Image src='/image/NestTypeOrm.png' alt='' width={200} height={200} className='w-full rounded-lg h-40' />
+                         <Image src='/image/NestTypeOrm.png' alt='' width={200} height={200} className='w-full rounded-t-lg h-40 bg-gray-800 dark:bg-white' />
                          <div className='p-4'>
                               <h1 className='text-[#cccccc]'>Nest js Vue POS</h1>
                               <p className='text-sm text-[#818181] py-2'>
@@ -107,7 +107,7 @@ function Project() {
                          </div>
                     </div>
                     <div className='bg-[#363636] rounded-lg'>
-                         <Image src='/image/nodejs.png' alt='' width={200} height={200} className='w-full rounded-t-lg h-40' />
+                         <Image src='/image/node.png' alt='' width={200} height={200} className='w-full rounded-t-lg h-40' />
                          <div className='p-4'>
                               <h1 className='text-[#cccccc]'>Nodejs  Mini Mart Api</h1>
                               <p className='text-sm text-[#818181] py-2'>
