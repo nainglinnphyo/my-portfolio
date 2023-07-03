@@ -80,17 +80,17 @@ function HomePage() {
                <div className='w-full flex justify-center mb-16'>
                     <ul className='flex space-x-2 md:space-x-6'>
                          <animated.li style={bT1} className='md:w-14 md:h-14 w-10 h-10 rounded-full border-[#5a5a5a] dark:border-[#9d9d9d] border-b-[0.12rem] shadow-md hover:shadow-2xl hover:duration-700  hover:shadow-[#027b0c] flex justify-center items-center cursor-pointer'>
-                              <Link href='' >
+                              <Link href='https://github.com/nainglinnphyo' target='_blank' >
                                    <Icon icon='mdi:github' width='1.4rem' height='1.4rem' color={`${currentTheme === 'light' ? '#5a5a5a' : '#fff'}`} />
                               </Link>
                          </animated.li>
                          <animated.li style={bT2} className='md:w-14 md:h-14 w-10 h-10 rounded-full border-[#5a5a5a] dark:border-[#9d9d9d] border-b-[0.12rem] shadow-md hover:shadow-2xl hover:duration-700  hover:shadow-[#027b0c] flex justify-center items-center cursor-pointer'>
-                              <Link href='' >
+                              <Link href='https://www.linkedin.com/in/naing-linn-phyo-768852175/' target='_blank'>
                                    <Icon icon='entypo-social:linkedin-with-circle' width='1.4rem' height='1.4rem' color={`${currentTheme === 'light' ? '#5a5a5a' : '#fff'}`} />
                               </Link>
                          </animated.li>
                          <animated.li style={bT3} className='md:w-14 md:h-14 w-10 h-10 rounded-full border-[#5a5a5a] dark:border-[#9d9d9d] border-b-[0.12rem] shadow-md hover:shadow-2xl hover:duration-700  hover:shadow-[#027b0c]  flex justify-center items-center cursor-pointer'>
-                              <Link href='' >
+                              <Link href='https://telegram.me/defined_me' >
                                    <Icon icon='simple-icons:telegram' width='1.4rem' height='1.4rem' color={`${currentTheme === 'light' ? '#5a5a5a' : '#fff'}`} />
                               </Link>
                          </animated.li>
